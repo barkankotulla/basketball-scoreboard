@@ -3,32 +3,20 @@ let guestScore = document.getElementById("guest-score")
 let homeCount = 0
 let guestCount = 0
 
-function incrementHomeByOne() {
-    homeCount += 1
+function incrementHome(increment) {
+    homeCount += increment
     homeScore.textContent = homeCount
 }
 
-function incrementHomeByTwo() {
-    homeCount += 2
+function incrementGuest(increment) {
+    guestCount += increment
+    guestScore.textContent = guestCount
+}
+
+function newGame() {
+    homeCount = 0
     homeScore.textContent = homeCount
-}
-
-function incrementHomeByThree() {
-    homeCount += 3
-    homeScore.textContent = homeCount
-}
-
-function incrementGuestByOne() {
-    guestCount += 1
+    guestCount = 0 
     guestScore.textContent = guestCount
 }
 
-function incrementGuestByTwo() {
-    guestCount += 2
-    guestScore.textContent = guestCount
-}
-
-function incrementGuestByThree() {
-    guestCount += 3
-    guestScore.textContent = guestCount
-}

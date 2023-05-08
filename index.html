@@ -11,9 +11,9 @@
                     <h3 id="home-score" class="home-score">0</h3>
                 </div>
                 <div class="flex">
-                    <button class="button" id="button-plus-one" onclick="incrementHomeByOne()">+1</button>
-                    <button class="button" id="button-plus-two" onclick="incrementHomeByTwo()">+2</button>
-                    <button class="button" id="button-plus-three" onclick="incrementHomeByThree()">+3</button>
+                    <button class="button-count" id="button-plus-one" onclick="incrementHome(1)">+1</button>
+                    <button class="button-count" id="button-plus-two" onclick="incrementHome(2)">+2</button>
+                    <button class="button-count" id="button-plus-three" onclick="incrementHome(3)">+3</button>
                 </div>
             </div>
             <div>
@@ -22,11 +22,14 @@
                     <h3 id="guest-score" class="guest-score">0</h3>
                 </div>
                 <div class="flex">
-                    <button class="button" id="button-plus-one" onclick="incrementGuestByOne()">+1</button>
-                    <button class="button" id="button-plus-two" onclick="incrementGuestByTwo()">+2</button>
-                    <button class="button" id="button-plus-three" onclick="incrementGuestByThree()">+3</button>
+                    <button class="button-count" id="button-plus-one" onclick="incrementGuest(1)">+1</button>
+                    <button class="button-count" id="button-plus-two" onclick="incrementGuest(2)">+2</button>
+                    <button class="button-count" id="button-plus-three" onclick="incrementGuest(3)">+3</button>
                 </div>
             </div>
+        </div>
+        <div class="flex new-game-button-div">
+            <button class="button-new-game" id="button-new-game" onclick="newGame()">NEW GAME</button>
         </div>
         <script src="index.js"></script>
     </body>
